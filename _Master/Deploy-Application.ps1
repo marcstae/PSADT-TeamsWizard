@@ -107,7 +107,7 @@ Try {
 
 	#endregion
 	[string]$MSIProductCode = '{85F4CBCB-9BBC-4B50-A7D8-E1106771498D}' # e.g {0EB47F41-0FF3-472D-ADA1-2389E96A56C4}
-	[string]$MSIName = 'TeamsWizard_x64' #MSI 
+	[string]$MSIName = '.\TeamsWizard_x64.msi' #MSI 
 	#[string]$MSIName0 = '' #MSI 
 	#[string]$MSIName1 = '' #MSI 
 	[string]$TransformName = '' #MST
