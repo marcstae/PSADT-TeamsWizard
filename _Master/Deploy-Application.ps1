@@ -61,15 +61,15 @@ Try {
 	##* VARIABLE DECLARATION
 	##*===============================================
 	## Variables: Application
-	[string]$appVendor = 'MasterVendor'
-	[string]$appName = 'MasterName'
-	[string]$appVersion = 'MasterVersion'
-	[string]$appArch = 'MasterArch' #e.g x64
-	[string]$appLang = 'MasterLang'
-	[string]$appRevision = 'MasterRevision'
+	[string]$appVendor = 'LyncWizard'
+	[string]$appName = 'TeamsWizard'
+	[string]$appVersion = '0.4.6'
+	[string]$appArch = 'x64' #e.g x64
+	[string]$appLang = 'ML'
+	[string]$appRevision = 'Initial'
 	[string]$appScriptVersion = '1.0.0'
-	[string]$appScriptDate = 'XX/XX/20XX'
-	[string]$appScriptAuthor = '<author name>'
+	[string]$appScriptDate = '23/09/2022'
+	[string]$appScriptAuthor = 'Marc Staeuble'
 	[string]$packageIdentifier = "$($appVendor)_$($appName)_$($appVersion)_$($appArch)_$($appLang)_$($appRevision)"
 	##*===============================================
 	## Variables: Install Titles (Only set here to override defaults set by the toolkit)
@@ -152,7 +152,7 @@ Try {
 			Execute-MSI -Action Install -Path "$MSIName" -Transform "$TransformName" -private:$installName -AddParameters "ALLUSERS=1"
 			Execute-MSI -Action Install -Path "$MSIName0" -Transform "$TransformName;$TransformName0" -private:$installName
 			
-			# Kein Abbruch bei Fehler da returncode mit -passthru übergeben wird
+			# Kein Abbruch bei Fehler da returncode mit -passthru ï¿½bergeben wird
 			#[psobject]$ExecuteResult = Execute-MSI -Action Install -Path "$MSIName" -Transform "$TransformName" -private:$installName -PassThru
         } 
         else 
