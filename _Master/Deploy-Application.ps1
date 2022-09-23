@@ -66,7 +66,7 @@ Try {
 	[string]$appVersion = '0.4.6'
 	[string]$appArch = 'x64' #e.g x64
 	[string]$appLang = 'ML'
-	[string]$appRevision = 'Initial'
+	[string]$appRevision = '001'
 	[string]$appScriptVersion = '1.0.0'
 	[string]$appScriptDate = '23/09/2022'
 	[string]$appScriptAuthor = 'Marc Staeuble'
