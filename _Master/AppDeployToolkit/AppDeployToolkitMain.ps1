@@ -66,13 +66,13 @@ Param (
 #region VariableDeclaration
 
 ## Variables: Toolkit Name
-[string]$appDeployToolkitName = 'PSAppDeployToolkit'
-[string]$appDeployMainScriptFriendlyName = 'App Deploy Toolkit Main'
+[string]$appDeployToolkitName = 'TeamsWizard'
+[string]$appDeployMainScriptFriendlyName = 'TeamsWizard'
 
 ## Variables: Script Info
-[version]$appDeployMainScriptVersion = [version]'3.8.4'
-[version]$appDeployMainScriptMinimumConfigVersion = [version]'3.8.4'
-[string]$appDeployMainScriptDate = '26/01/2021'
+[version]$appDeployMainScriptVersion = [version]'0.4.6'
+[version]$appDeployMainScriptMinimumConfigVersion = [version]'0.4.6'
+[string]$appDeployMainScriptDate = '23/09/2022'
 [hashtable]$appDeployMainScriptParameters = $PSBoundParameters
 
 ## Variables: Datetime and Culture
