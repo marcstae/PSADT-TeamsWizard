@@ -85,7 +85,7 @@ Param (
 [Globalization.CultureInfo]$uiculture = Get-UICulture
 [string]$currentUILanguage = $uiculture.TwoLetterISOLanguageName.ToUpper()
 
-## Variables: Environment Variables
+## Variables: Environment Variabless
 [psobject]$envHost = $Host
 [psobject]$envShellFolders = Get-ItemProperty -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders' -ErrorAction 'SilentlyContinue'
 [string]$envAllUsersProfile = $env:ALLUSERSPROFILE
