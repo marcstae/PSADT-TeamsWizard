@@ -179,6 +179,14 @@ Try {
         ## write EventLog
         Write-ToEventLog "Application" "AveniqInstaller" "100" "$installName -- Installation operation completed successfully. -- $ExecuteResult. Detailed Information see LOGFILE" "Information" 
 		
+
+
+		#do chunnt s'restlich gschmeus inne für nachkonfiguration
+		#regshot für registry verwende und ganze mit active setup dureführe
+		
+
+
+
         ## create shortcuts
 		#New-Shortcut -Path "$envProgramData\Microsoft\Windows\Start Menu\My Shortcut.lnk" -TargetPath "$envWinDir\system32\notepad.exe" -IconLocation "$envWinDir\system32\notepad.exe" -Description 'Notepad' -WorkingDirectory "$envHomeDrive\$envHomePath"
 		#New-Shortcut -Path "$envCommonDesktop\My Shortcut.lnk" -TargetPath "$envWinDir\system32\notepad.exe" -IconLocation "$envWinDir\system32\notepad.exe" -Description 'Notepad' -WorkingDirectory "$envHomeDrive\$envHomePath"
