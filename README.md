@@ -15,21 +15,7 @@ This whole project is about taking a preexisting .exe or .msi and implementing i
 * Forked README: <https://github.com/flopach/ztp2go>
 * ZTP Repo: <https://github.com/jeremycohoe/c9300-ztp>
 
-## Configuration Steps
+## How to run this script
 
-### 1. Configuration of the local network (e.g. eth0) = Ethernet port of RasPi
+### Simply download the whole project and execute it in administator mode
 
-`sudo vim /etc/network/interfaces.d/eth0`
-
-Example config:
-
-```
-auto eth0
-iface eth0 inet static
-hwaddress b8:27:eb:43:80:fe
-address 10.100.10.100
-netmask 255.255.255.0
-gateway 10.100.10.1
-```
-
-### 2. Install ISC DHCP-Server on the Raspberry Pi
