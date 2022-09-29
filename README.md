@@ -17,5 +17,5 @@ This whole project is about taking a preexisting .exe or .msi and implementing i
 
 ## How to run this script
 
-### Simply download the whole project and execute it in administator mode
+Simply download the whole project and execute it in administator mode
 
