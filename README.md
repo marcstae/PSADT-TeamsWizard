@@ -10,10 +10,6 @@ Note: This project is by no means perfect and was just a proof of concept for my
 
 This whole project is about taking a preexisting .exe or .msi and implementing it into a Powershell script that automatically installs it on a customer pc without him having to configure anything afterwards.
 
-![](ztp.png)
-
-* Forked README: <https://github.com/flopach/ztp2go>
-* ZTP Repo: <https://github.com/jeremycohoe/c9300-ztp>
 
 ## How to run this script
 
