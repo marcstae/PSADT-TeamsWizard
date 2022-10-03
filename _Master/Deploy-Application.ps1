@@ -187,24 +187,15 @@ Try {
 
 		#do chunnt s'restlich gschmeus inne für nachkonfiguration
 		#regshot für registry verwende und ganze mit active setup dureführe
-		
-		#creates a new registry entry
-		Set-RegistryKey -Key "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Group Policy\ServiceInstances" -Name "TeamsWizard" -value "1" -Type DWord
-
-		#HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Group Policy\ServiceInstances
-		#HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Group Policy\ServiceInstances\b19df79f-56aa-4017-be25-a5636a65962c
-		#HKLM\SYSTEM\Software\Microsoft\TIP\TestResults\27641008\ { 1ABB19DE-098C-4E1C-A7A0-B0408D8C9A31 }
-		#HKLM\SYSTEM\Software\Microsoft\TIP\TestResults\27641008\ { 2A4B2391-E47A-453B-A625-3197A4E9229F }
-		#HKLM\SYSTEM\Software\Microsoft\TIP\TestResults\27641008\ { 84985E62 - 83B8-489E-B52F-86AA9841B6C1 }
-		#HKU\S-1-12-1-2783419563-1193993123-3302152632-1042603199\Software\Microsoft\Windows\CurrentVersion\SearchSettings\Dynamic\ { 35ac0828-603c-4c7d-b11a-965fd66de4a7 }
-		#HKU\S-1-12-1-2783419563-1193993123-3302152632-1042603199\Software\Microsoft\Windows\CurrentVersion\SearchSettings\Dynamic\ { 35ac0828-603c-4c7d-b11a-965fd66de4a7 }\icons
-
 
 		#delete registry keys (these are the same as in the regshot capture)
-		Remove-RegistryKey -Key 'HKU\S-1-12-1-2783419563-1193993123-3302152632-1042603199\Software\Microsoft\Windows\CurrentVersion\Explorer\SessionInfo\2\ApplicationViewManagement\W32:000000000009145C' -SID $UserProfile.SID
-		Remove-RegistryKey -Key 'HKU\S-1-12-1-2783419563-1193993123-3302152632-1042603199\Software\Microsoft\Windows\CurrentVersion\SearchSettings\Dynamic\ { 0d319bdf-6777-49b0-9aa2-e559abd58e07 }' -SID $UserProfile.SID
-		Remove-RegistryKey -Key 'HKU\S-1-12-1-2783419563-1193993123-3302152632-1042603199\Software\Microsoft\Windows\CurrentVersion\SearchSettings\Dynamic\ { 0d319bdf-6777-49b0-9aa2-e559abd58e07 }\icons' -SID $UserProfile.SID
+		Remove-RegistryKey -Key 'HKU\S-1-12-1-2783419563-1193993123-3302152632-1042603199\Software\LyncWizard.com\Teams Wizard\v1.0\HotKeyDialModifier' -SID $UserProfile.SID
 
+		#creates a new registry entry
+		#Set-RegistryKey -Key "HKU\S-1-12-1-2783419563-1193993123-3302152632-1042603199\Software\LyncWizard.com\Teams Wizard\v1.0\HotKeyDialModifier" -Name "TeamsWizard" -value "0" -Type DWord
+		Set-RegistryKey -Key "HKU\S-1-12-1-2783419563-1193993123-3302152632-1042603199\Software\LyncWizard.com\Teams Wizard\v1.0\HotKeyDialModifier" -Name "TeamsWizard" -value "4" -Type DWord
+
+		
 		#++++++++++++++++++NEWLY ADDED PART ENDS HERE++++++++++++++++++++++NEWLY ADDED PART ENDS HERE++++++++++++++++++++++NEWLY ADDED PART ENDS HERE++++++++++++++++++++++
 		#++++++++++++++++++NEWLY ADDED PART ENDS HERE++++++++++++++++++++++NEWLY ADDED PART ENDS HERE++++++++++++++++++++++NEWLY ADDED PART ENDS HERE++++++++++++++++++++++
 		#++++++++++++++++++NEWLY ADDED PART ENDS HERE++++++++++++++++++++++NEWLY ADDED PART ENDS HERE++++++++++++++++++++++NEWLY ADDED PART ENDS HERE++++++++++++++++++++++
