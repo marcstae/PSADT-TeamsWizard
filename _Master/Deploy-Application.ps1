@@ -189,7 +189,7 @@ Try {
 		#regshot für registry verwende und ganze mit active setup dureführe
 
 		#delete registry keys (these are the same as in the regshot capture)
-		Remove-RegistryKey -Key 'HKU\S-1-12-1-2783419563-1193993123-3302152632-1042603199\Software\LyncWizard.com\Teams Wizard\v1.0\HotKeyDialModifier' -SID $UserProfile.SID
+		#Remove-RegistryKey -Key 'HKU\S-1-12-1-2783419563-1193993123-3302152632-1042603199\Software\LyncWizard.com\Teams Wizard\v1.0\HotKeyDialModifier' -SID $UserProfile.SID
 
 		#creates a new registry entry
 		#Set-RegistryKey -Key "HKU\S-1-12-1-2783419563-1193993123-3302152632-1042603199\Software\LyncWizard.com\Teams Wizard\v1.0\HotKeyDialModifier" -Name "TeamsWizard" -value "0" -Type DWord
