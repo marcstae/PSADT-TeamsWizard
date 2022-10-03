@@ -10,4 +10,4 @@ This whole project is about taking a preexisting .exe or .msi and implementing i
 
 ## How to run this script
 
-Simply download the whole project and execute "PSADT-TeamsWizard/_Master/Deploy-Application.ps1" in administator mode.
+Simply download the whole project and execute `PSADT-TeamsWizard/_Master/Deploy-Application.ps1` in administator mode.
